@@ -1,0 +1,10 @@
+#!/bin/bash
+
+file_name=""
+
+while [[ ! -d $file_name ]]
+do
+	read -p "Enter the file name: " file_name
+done
+
+echo $(ls $file_name)

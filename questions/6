@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read -r name
+do
+	sed "s/Recipients_Name/$name/g" message_template.txt > "$name".txt
+done < group_members.txt
