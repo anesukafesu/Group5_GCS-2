@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Getting the phrase
+echo "Enter a phrase"
+read phrase
+
+# Calculating the number of words and spaces
+words=$(echo $phrase | wc -w)
+spaces=$(( $words - 1 ))
+
+# Displaying the output
+echo "The number of words is $words"
+echo "The number of spaces is $spaces"
