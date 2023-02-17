@@ -1,0 +1,14 @@
+# Generating the random numbers
+num1=$RANDOM
+num2=$RANDOM
+
+# Calculate square roots
+sqrt_num1=$(bc <<< "sqrt($num1)")
+sqrt_num2=$(bc <<< "sqrt($num2)")
+
+# Displaying the output
+echo "The first number is $num1"
+echo "The square root is $sqrt_num1"
+
+echo "The second number is $num2"
+echo "The square root is $sqrt_num2"
