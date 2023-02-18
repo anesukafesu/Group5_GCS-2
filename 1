@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Challenge 1 GCS-2
+echo -e "one\ntwo\nthree\nfour\nfive" | tee >(cat > "$(date +%F)-file.txt")
