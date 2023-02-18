@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Enter the first number: " firstNum
+read -p "Enter the second number: " secondNum
+
+result=$(( firstNum * secondNum))
+
+echo "The product of the $firstNum and $secondNum is $result"
+
+file="text.txt"
+
+while read -r line; do
+        touch "$line"
+done <$file

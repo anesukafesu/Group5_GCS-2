@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+FILE=$(date +%y-%m-%d)-file.txt
+
+echo "one" | tee $FILE
+echo "two" | tee $FILE
+echo "three" | tee $FILE
+echo "four" | tee $FILE
+echo "five" | tee $FILE
